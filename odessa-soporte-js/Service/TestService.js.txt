@@ -4,27 +4,27 @@ public class TestService {
  
     @Autowired
     private Dao<Todo> testDao;
-    private Todo todo = new Todo();
+    private Prueba Prueba = new Prueba();
  
     public void save() {
-        todoDao.save(todo);
-        todo = new Todo();
+        PruebaDao.save(Prueba);
+        Prueba = new Prueba();
     }
  
-    public Collection<Todo> getAllTodo() {
-        return todoDao.getAll();
+    public Collection<Prueba> getAllPrueba() {
+        return PruebaDao.getAll();
     }
  
-    public int saveTodo(Todo todo) {
-        validate(todo);
-        return todoDao.save(todo);
+    public int savePrueba(Prueba Prueba) {
+        validate(Prueba);
+        return PruebaDao.save(Prueba);
     }
  
-    private void validate(Todo todo) {
+    private void validate(Prueba Prueba) {
         // Details omitted
     }
  
-    public Todo getTodo() {
-        return todo;
+    public Prueba getPrueba() {
+        return Prueba;
     }
 }
