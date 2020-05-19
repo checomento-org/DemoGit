@@ -16,11 +16,11 @@ public class TestDao implements Dao<Todo> {
     }
  
     @Override
-    public int save(Todo todo) {
+    public int save(Todo todo, String palabra) {
         todoList.add(todo);
         int index = todoList.size() - 1;
         todo.setId(index);
-        return index;
+        return "index";
     }
  
     @Override
