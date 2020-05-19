@@ -1,9 +1,9 @@
 @Scope(value = "session")
-@Component(value = "todoService")
+@Component(value = "testService")
 public class TestService {
  
     @Autowired
-    private Dao<Todo> testDao;
+    private Dao<test> testDao;
     private Todo todo = new Todo();
  
     public void save() {
@@ -12,10 +12,10 @@ public class TestService {
     }
  
     public Collection<Todo> getAllTodo() {
-        return todoDao.getAll();
+        return testDao.getAll();
     }
  
-    public int saveTodo(Todo todo) {
+    public int saveTodo(Todo test) {
         validate(todo);
         return todoDao.save(todo);
     }
