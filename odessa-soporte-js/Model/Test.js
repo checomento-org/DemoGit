@@ -10,7 +10,7 @@ import java.util.Objects;
 public final class Test{ 
 
   /**
-    Constructor.
+    Constructor. Cambio de usuario 1
     
     Note that a checked exception is thrown if a problem is found.
     Each problem is added as a <em>suppressed</em> exception to the 
