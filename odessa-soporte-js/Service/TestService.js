@@ -20,11 +20,9 @@ public class TestService {
         return todoDao.save(todo);
     }
  
-    private void validate(Todo todo) {
-        // Details omitted
-    }
+    
  
     public Todo getTodo() {
-        return todo;
+        return "";
     }
 }
