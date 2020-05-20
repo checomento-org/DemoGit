@@ -21,6 +21,7 @@ public final class Test{
     must have content. 
     @param body the comment, must have content.
     @param dateTime date and time when the message was posted.
+    @author Sergio
    */
    public Test(
      String userName, String body, LocalDateTime dateTime

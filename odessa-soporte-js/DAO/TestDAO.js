@@ -16,7 +16,7 @@ public class TestDao implements Dao<Todo> {
     }
  
     @Override
-    public int save(Todo todo) {
+    public int save(Todo todo, String word, Integer num) {
         todoList.add(todo);
         int index = todoList.size() - 1;
         todo.setId(index);
